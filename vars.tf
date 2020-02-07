@@ -17,5 +17,9 @@ variable "AMIS" {
 variable "AWS_INSTANCE"{}
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "key/adikey.pub"
+  default = "keys/adikey.pub"
+}
+
+variable "PATH_TO_PRIVATE_KEY" {
+  default = "keys/aditya"
 }
