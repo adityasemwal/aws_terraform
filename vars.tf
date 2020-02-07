@@ -8,7 +8,7 @@ variable "AWS_SECRET_KEY"{}
 
 variable "AMIS" {
   default = {
-    us-west-1 = "us-west-1 ami"
+    us-west-1 = "ami-03caa3f860895f82e"
     eu-west-1 = "eu-west-1 ami"
     ap-south-1 = "ami-ap south instance"
   }
@@ -21,5 +21,5 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "keys/adikey"
+  default = "adikey"
 }
