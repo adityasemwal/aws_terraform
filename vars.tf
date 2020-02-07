@@ -21,5 +21,5 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "keys/aditya"
+  default = "keys/adikey"
 }
