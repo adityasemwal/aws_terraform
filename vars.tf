@@ -15,3 +15,7 @@ variable "AMIS" {
 }
 
 variable "AWS_INSTANCE"{}
+
+variable "PATH_TO_PUBLIC_KEY" {
+  default = "key/adikey.pub"
+}
