@@ -23,3 +23,11 @@ variable "PATH_TO_PUBLIC_KEY" {
 variable "PATH_TO_PRIVATE_KEY" {
   default = "adikey"
 }
+
+variable "CIDR_BLOCK"{
+  default = "10.0.0.0/16"
+}
+
+variable "SUB_1_CIDR"{
+  default = "10.0.1.0/16"
+}
