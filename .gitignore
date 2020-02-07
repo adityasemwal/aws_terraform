@@ -4,4 +4,4 @@ adikey
 adikey.pub
 output.txt
 *.tfstate
-#.tfstate.*
+*.tfstate.*
