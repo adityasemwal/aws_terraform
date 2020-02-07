@@ -2,6 +2,7 @@
 .terraform/
 adikey
 adikey.pub
+keys/
 output.txt
 *.tfstate
 *.tfstate.*
