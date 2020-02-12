@@ -10,5 +10,13 @@ resource "aws_instance" "my_instance_1"{
 
   # Security Group
   vpc_security_group_ids = [aws_security_group.allow-ssh.id]
+
+  #User Data
+  user_data = file("userData.sh")
+
+  tags = {
+    Name = "Terraform Instance"
+    Class = "Test"
+  }
 }
 
