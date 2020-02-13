@@ -22,7 +22,7 @@ resource "aws_instance" "my_instance_1"{
     connection{
       type = "ssh"
       host = self.public_ip
-      private_key = file("./keys/adikey")
+      private_key = file("/home/ec2-user/keys/adikey")
       user = "ec2-user"
     }
     inline = [
