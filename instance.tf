@@ -22,7 +22,7 @@ resource "aws_instance" "my_instance_1"{
     connection{
       type = "ssh"
       host = self.public_ip
-      private_key = file("/home/ec2-user/keys/adikey")
+      private_key = file("/home/jenkins/adikey")
       user = "ec2-user"
     }
     inline = [
@@ -32,7 +32,7 @@ resource "aws_instance" "my_instance_1"{
       "sudo usermod -a -G docker ec2-user",
       "sudo service docker enable",
       "sudo $(aws ecr get-login --no-include-email --region us-west-1)",
-      "sudo ocker pull 809367851270.dkr.ecr.us-west-1.amazonaws.com/demo:latest",
+      "sudo docker pull 809367851270.dkr.ecr.us-west-1.amazonaws.com/demo:latest",
       "sudo docker run -itd -p 8080:8080 809367851270.dkr.ecr.us-west-1.amazonaws.com/demo:latest",
     ]
   }
