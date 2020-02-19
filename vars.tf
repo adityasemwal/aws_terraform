@@ -31,3 +31,11 @@ variable "CIDR_BLOCK"{
 variable "SUB_1_CIDR"{
   default = "10.0.1.0/24"
 }
+
+variable "ports"{
+  type = map(list(string))
+  default = {
+    "22" = ["0.0.0.0/0"]
+    "8080" = ["0.0.0.0/0"]
+  }
+}
