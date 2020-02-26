@@ -35,7 +35,7 @@ variable "SUB_1_CIDR"{
 variable "ports"{
   type = map(list(string))
   default = {
-    "22" = ["0.0.0.0/0"]
-    "8080" = ["0.0.0.0/0"]
+    22 = ["0.0.0.0/0"]
+    8080 = ["0.0.0.0/0"]
   }
 }
